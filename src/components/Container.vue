@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Post />
+    <Post :data="data[0]" />
   </div>
 </template>
 
@@ -11,6 +11,9 @@ export default {
     name: 'Container',
     components:{
         Post: Post,
+    },
+    props:{
+      data: Array,
     }
 };
 </script>
